@@ -1,10 +1,11 @@
 import { Container } from "./styles";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
+import logo from "/src/assets/logo.svg";
 
 const TopBar = () => {
   return (
     <Container>
-      <Logo />
+      <img src={logo} />
+      
     </Container>
   );
 };

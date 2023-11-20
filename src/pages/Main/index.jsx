@@ -1,5 +1,15 @@
+import TopBar from "../../components/TopBar";
+import { Container } from "./styles";
+
 const Main = () => {
-  return <></>;
+  return (
+    <>
+      <TopBar />
+      <Container />
+      <Container />
+      <Container />
+    </>
+  );
 };
 
 export default Main;

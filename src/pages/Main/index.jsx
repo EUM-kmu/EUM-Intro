@@ -10,27 +10,33 @@ const Main = () => {
   return (
     <>
       <TopBar />
-      <Container color={"#ffa339"}>
-        <FlexBox
-          flexdirection={"column"}
-          alignitems={"center"}
-          justifycontent={"space-between"}
-        >
-          <FlexBox gap={"33px"}>
-            <ImageBox src={icon} />
-            <ImageBox src={title} />
-          </FlexBox>
-          <Text textalign={"center"} fontSize={"20px"} fontWeight={500}>
-            우리 마을 주민들의 니즈를 반영한 동네 소통 플랫폼, 햇살마을이에요.
-            <br />
-            햇살마을에서 지역 이웃들과의 교류를 시작해 볼까요?
-          </Text>
-          <FlexBox gap={"44px"}>
-            <ImageBox src={phone1} />
-            <ImageBox src={phone2} />
-          </FlexBox>
+      <FlexBox
+        width={"100vw"}
+        height={"100vh"}
+        color={"#ffa339"}
+        flexdirection={"column"}
+        alignitems={"center"}
+        justifycontent={"space-between"}
+      >
+        <FlexBox gap={"33px"}>
+          <ImageBox src={icon} />
+          <ImageBox src={title} />
         </FlexBox>
-      </Container>
+        <Text
+          textalign={"center"}
+          fontSize={"20px"}
+          fontWeight={500}
+          color={"white"}
+        >
+          우리 마을 주민들의 니즈를 반영한 동네 소통 플랫폼, 햇살마을이에요.
+          <br />
+          햇살마을에서 지역 이웃들과의 교류를 시작해 볼까요?
+        </Text>
+        <FlexBox gap={"44px"}>
+          <ImageBox src={phone1} />
+          <ImageBox src={phone2} />
+        </FlexBox>
+      </FlexBox>
 
       {/* <Container>
         <FlexBox

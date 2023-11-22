@@ -7,14 +7,11 @@ export const Text = styled.p`
   color: ${(props) => props.color};
 `;
 
-export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background: ${(props) => props.color || "#f2f2f7"};
-`;
-
 export const FlexBox = styled.div`
   display: flex;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  background: ${(props) => props.color};
   gap: ${(props) => props.gap};
   flex-direction: ${(props) => props.flexdirection};
   justify-content: ${(props) => props.justifycontent};

@@ -15,7 +15,7 @@ const Main = () => {
         padding={"48px 0px 0px 0px"}
         width={"100vw"}
         height={"calc(100vh - 140px)"}
-        color={"#ffa339"}
+        color={"var(--primary)"}
         flexdirection={"column"}
         alignitems={"center"}
         justifycontent={"space-between"}

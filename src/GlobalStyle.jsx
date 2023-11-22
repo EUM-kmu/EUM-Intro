@@ -91,6 +91,18 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+
+    :root {
+        --primary: #FFA339;
+        --primary-l: #FFF0D4;
+        --secondary-d: #042D53;
+        --gray02: #F2F2F7;
+        --gray03: #E5E5EA;
+        --gray05: #C7C7CC;
+        --gray06: #AEAEB2;
+        --gray07: #8E8E93;
+        --button-default: #042D53;
+    }
 `;
 
 export default GlobalStyles;

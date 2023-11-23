@@ -8,4 +8,5 @@ export const Container = styled.div`
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 30;
 `;

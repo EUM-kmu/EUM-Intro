@@ -32,10 +32,9 @@ const Main = () => {
       </div>
 
       {/** Screen 2 */}
-
-      {/** Navigator */}
-      <div className="relative flex flex-col w-screen h-[1080px] items-center bg-[#F2F2F7]">
-        <div className="flex font-2xl font-bold gap-5 items-center">
+      <div className="relative flex flex-col w-screen h-[1080px] items-center bg-[#F2F2F7] ">
+        {/** Navigator */}
+        <div className="flex w-screen contents-start font-2xl font-bold gap-5 items-center max-w-7xl pl-9 pt-10 z-10">
           <p className="text-4xl font-bold text-[#042D53]">ONBOARDING</p>
           <div className="flex gap-2">
             <img src={empty} />
@@ -46,13 +45,15 @@ const Main = () => {
           </div>
         </div>
 
-        <p className="text-4xl text-[#042D53] font-bold z-10">프로필 생성</p>
-        <p className="z-10 text-xl font-medium text-center text-[#7E93A3] ">
+        <p className="text-4xl text-[#042D53] font-bold z-10 pt-12">
+          프로필 생성
+        </p>
+        <p className="z-10 text-xl font-medium text-center text-[#7E93A3] p-11 ">
           단계를 따라 프로필을 생성하고 연령대별
           <br />
           캐릭터를 선택할 수 있어요.
         </p>
-        <img src={phoneProfile} />
+        <img className="z-10" src={phoneProfile} />
         <img className="absolute z-0 left-0" src={bgProfile} />
       </div>
     </>

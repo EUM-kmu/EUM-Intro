@@ -11,6 +11,25 @@ const Main = () => {
     <>
       <TopBar />
       {/* Screen 1 */}
+      <div className="flex flex-col pt-12 w-screen h-[1080px] items-center justify-between bg-[#FFA339]">
+        <div className="flex flex-col">
+          <div className="flex gap-8">
+            <img src={icon} />
+            <img src={title} />
+          </div>
+          <p className="pt-6 text-xl text-white text-center font-medium">
+            우리 마을 주민들의 니즈를 반영한 동네 소통 플랫폼, 햇살마을이에요.
+            <br />
+            햇살마을에서 지역 이웃들과의 교류를 시작해 볼까요?
+          </p>
+        </div>
+        <div className="flex gap-11">
+          <img src={phone1} />
+          <img src={phone2} />
+        </div>
+      </div>
+
+      {/* Screen 2 */}
       <FlexBox
         padding={"48px 0px 0px 0px"}
         width={"100vw"}

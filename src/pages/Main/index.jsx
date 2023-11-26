@@ -7,6 +7,8 @@ import empty from "../../assets/empty_circle.svg";
 import filled from "../../assets/filled_circle.svg";
 import phoneProfile from "../../assets/phone_profile.svg";
 import bgProfile from "../../assets/bg_profile_web.png";
+import phoneHome from "../../assets/phone_home.svg";
+import infoSunlightCard from "../../assets/info_sunlight_card.svg";
 
 const Main = () => {
   return (
@@ -32,7 +34,7 @@ const Main = () => {
       </div>
 
       {/** Screen 2 */}
-      <div className="relative flex flex-col w-screen h-[360px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
+      <div className="relative flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
@@ -63,34 +65,50 @@ const Main = () => {
       </div>
 
       {/** Screen 3 */}
-      <div className="flex flex-col w-screen h-screen items-center bg-[#D9DEE4]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#D9DEE4]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
-          <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
-            ONBOARDING
-          </p>
-          <div className="flex gap-2">
-            <img src={filled} />
-            <img src={empty} />
-            <img src={empty} />
-            <img src={empty} />
-            <img src={empty} />
+          <p className="text-xs sm:text-4xl font-bold text-[#042D53]">HOME</p>
+          <div className="flex sm:gap-2">
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={empty} />
+            <img className="w-5 sm:w-9" src={empty} />
+            <img className="w-5 sm:w-9" src={empty} />
+            <img className="w-5 sm:w-9" src={empty} />
           </div>
         </div>
 
         {/** Row Flex Box */}
         <div className="flex">
-          <p>게임형 홈 UI</p>
-          <p className="text-xs font-medium text-[#7E93A3]">
-            홈에서 내 캐릭터를 확인하고
-            <br />
-            햇살 카드창에 진입할 수 있어요.
-          </p>
-          <p>
-            한 달마다 초기화되는 햇살 지수를 모아
-            <br />내 캐릭터를 성장시킬 수 있어요.
-          </p>
+          <div className="flex flex-col">
+            <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
+              게임형 홈 UI
+            </p>
+            <p className="text-xs sm:text-xl font-medium text-[#7E93A3]">
+              홈에서 내 캐릭터를 확인하고
+              <br />
+              햇살 카드창에 진입할 수 있어요.
+            </p>
+            <p className="text-xs sm:text-xl font-medium text-[#7E93A3] pt-4 sm:pt-7">
+              한 달마다 초기화되는 햇살 지수를 모아
+              <br />내 캐릭터를 성장시킬 수 있어요.
+            </p>
+          </div>
+          <img className="w-[205px] sm:w-[740px]" src={phoneHome} />
         </div>
+      </div>
+
+      {/** Screen 4 */}
+      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center justify-center bg-[#E5E5EA]">
+        <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10">
+          햇살 카드
+        </p>
+        <p className="z-10 text-sm sm:text-xl font-medium text-center text-[#7E93A3] p-3 sm:p-11 ">
+          저축해 놓은 햇살은 도움이 필요할 때
+          <br />
+          언제든지 사용할 수 있어요.
+        </p>
+        <img className="w-[202px] sm:w-[720px]" src={infoSunlightCard} />
       </div>
     </>
   );

@@ -13,7 +13,7 @@ const Main = () => {
     <>
       <TopBar className="z-30" />
       {/** Screen 1 */}
-      <div className="flex flex-col pt-12 w-screen h-[380px] sm:h-screen items-center justify-between bg-[#FFA339]">
+      <div className="flex flex-col pt-12 w-screen h-[380px] sm:h-screen items-center justify-between bg-[#FFA339] overflow-hidden">
         <div className="flex flex-col items-center">
           <div className="flex gap-2 sm:gap-8  items-center">
             <img className="w-12 sm:w-32" src={icon} />
@@ -32,7 +32,7 @@ const Main = () => {
       </div>
 
       {/** Screen 2 */}
-      <div className="relative flex flex-col w-screen h-[360px] sm:h-screen items-center bg-[#F2F2F7] ">
+      <div className="relative flex flex-col w-screen h-[360px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
@@ -65,8 +65,10 @@ const Main = () => {
       {/** Screen 3 */}
       <div className="flex flex-col w-screen h-screen items-center bg-[#D9DEE4]">
         {/** Navigator */}
-        <div className="flex w-screen contents-start font-2xl font-bold gap-5 items-center max-w-7xl pl-9 pt-10 z-10">
-          <p className="text-4xl font-bold text-[#042D53]">HOME</p>
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+          <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
+            ONBOARDING
+          </p>
           <div className="flex gap-2">
             <img src={filled} />
             <img src={empty} />

@@ -11,6 +11,8 @@ import phoneHome from "../../assets/phone_home.svg";
 import infoSunlightCard from "../../assets/info_sunlight_card.svg";
 import infoSunlightExchange from "../../assets/info_sunlight_exchange.svg";
 import infoPost from "../../assets/info_post.svg";
+import infoParticipation from "../../assets/info_participation.svg";
+import sun3d from "../../assets/sun_3d.svg";
 
 const Main = () => {
   return (
@@ -159,6 +161,23 @@ const Main = () => {
           신청 버튼을 통해 활동 참여를 신청해요.
         </p>
         <img className="w-[308px] sm:w-[1106px]" src={infoPost} />
+      </div>
+
+      {/** Screen 9 */}
+      <div className="relative flex flex-col w-screen h-[380px] sm:h-screen items-center bg-gradient-to-b from-[#3A3A3C] to-[#89643B] overflow-hidden ">
+        <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pt-5 sm:pt-12">
+          참여 관리
+        </p>
+        <p className="z-10 text-sm sm:text-xl font-medium text-center text-[#C7C7CC] p-3 sm:p-11 ">
+          내 게시글에서는 참여 신청 대신 참여자 관리를 할 수 있어요.
+          <br />
+          참여 신청을 수락하면 참여 이웃란에 채팅방이 생성돼요.
+        </p>
+        <img className="z-10 w-64 sm:w-[907px]" src={infoParticipation} />
+        <img
+          className="w-[210px] sm:w-[750px] absolute z-0 left-0 bottom-0"
+          src={sun3d}
+        />
       </div>
     </>
   );

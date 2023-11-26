@@ -10,6 +10,7 @@ import bgProfile from "../../assets/bg_profile_web.png";
 import phoneHome from "../../assets/phone_home.svg";
 import infoSunlightCard from "../../assets/info_sunlight_card.svg";
 import infoSunlightExchange from "../../assets/info_sunlight_exchange.svg";
+import infoPost from "../../assets/info_post.svg";
 
 const Main = () => {
   return (
@@ -143,6 +144,21 @@ const Main = () => {
           </div>
           <img className="w-[208px] sm:w-[740px]" src={infoSunlightExchange} />
         </div>
+      </div>
+
+      {/** 해당 위치에 글쓰기 플로우에 대한 2개의 Screen(6, 7)이 추가 되어야합니다.  */}
+
+      {/** Screen 8 */}
+      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center justify-center bg-[#3A3A3C]">
+        <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10">
+          게시글 조회, 참여 신청
+        </p>
+        <p className="z-10 text-sm sm:text-xl font-medium text-center text-[#C7C7CC] p-3 sm:p-11 ">
+          게시글의 내용을 확인하고 도움을 주거나 받고 싶은 게시글의
+          <br />
+          신청 버튼을 통해 활동 참여를 신청해요.
+        </p>
+        <img className="w-[308px] sm:w-[1106px]" src={infoPost} />
       </div>
     </>
   );

@@ -9,6 +9,7 @@ import phoneProfile from "../../assets/phone_profile.svg";
 import bgProfile from "../../assets/bg_profile_web.png";
 import phoneHome from "../../assets/phone_home.svg";
 import infoSunlightCard from "../../assets/info_sunlight_card.svg";
+import infoSunlightExchange from "../../assets/info_sunlight_exchange.svg";
 
 const Main = () => {
   return (
@@ -109,6 +110,39 @@ const Main = () => {
           언제든지 사용할 수 있어요.
         </p>
         <img className="w-[202px] sm:w-[720px]" src={infoSunlightCard} />
+      </div>
+
+      {/** Screen 5 */}
+      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53]">
+        {/** Navigator */}
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+          <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
+            Exchange
+          </p>
+          <div className="flex sm:gap-2">
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={empty} />
+            <img className="w-5 sm:w-9" src={empty} />
+            <img className="w-5 sm:w-9" src={empty} />
+          </div>
+        </div>
+
+        {/** Row Flex Box */}
+        {/** Screen 3의 Row Flex Box와 동일한 방법으로 처리할 예정 */}
+        <div className="flex">
+          <div className="flex flex-col">
+            <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
+              햇살 교환
+            </p>
+            <p className="text-xs sm:text-xl font-medium text-[#E5E5EA]">
+              이웃 간 도움을 주고받는 공간이에요.
+              <br />
+              햇터 진입 시 도움 종류를 선택해요.
+            </p>
+          </div>
+          <img className="w-[208px] sm:w-[740px]" src={infoSunlightExchange} />
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import TopBar from "../../components/TopBar";
 import icon from "../../assets/app_icon.svg";
+import iconApple from "../../assets/apple_icon.svg";
+import iconGooglePlay from "../../assets/googleplay_icon.svg";
 import title from "../../assets/app_title.svg";
 import phone1 from "../../assets/phone_1.svg";
 import phone2 from "../../assets/phone_2.svg";
@@ -16,6 +18,9 @@ import infoChat from "../../assets/info_chat.svg";
 import infoNotification from "../../assets/info_notification.svg";
 import sun3d from "../../assets/sun_3d.svg";
 import cloud3d from "../../assets/cloud_3d.svg";
+import StoreContainer from "../../components/StoreContainer/inedx";
+import qrApple from "../../assets/qr.png";
+import qrGoogle from "../../assets/qr.png";
 
 const Main = () => {
   return (
@@ -279,6 +284,25 @@ const Main = () => {
           className="w-[170px] sm:w-[700px] absolute z-0 right-0 bottom-0"
           src={cloud3d}
         />
+      </div>
+
+      {/** Screen 13 */}
+      <div className="py-7 sm:py-[100px] flex w-screen h-[212px] sm:h-[750px] justify-center items-center bg-[#DDDDDD] overflow-hidden ">
+        <div className="flex flex-col items-center gap-6 sm:gap-20">
+          <img className="w-[65px] sm:w-[205px]" src={icon} />
+          <div className="flex sm:gap-4 gap-[5.3px]">
+            <StoreContainer
+              qrSrc={qrApple}
+              iconSrc={iconApple}
+              text={"App Store"}
+            />
+            <StoreContainer
+              qrSrc={qrGoogle}
+              iconSrc={iconGooglePlay}
+              text={"Google Play"}
+            />
+          </div>
+        </div>
       </div>
     </>
   );

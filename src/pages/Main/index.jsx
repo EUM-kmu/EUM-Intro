@@ -21,6 +21,7 @@ import cloud3d from "../../assets/cloud_3d.svg";
 import StoreContainer from "../../components/StoreContainer/inedx";
 import qrApple from "../../assets/qr.png";
 import qrGoogle from "../../assets/qr.png";
+import Footer from "../../components/Footer";
 
 const Main = () => {
   return (
@@ -124,7 +125,7 @@ const Main = () => {
       </div>
 
       {/** Screen 5 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53]">
+      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
@@ -225,7 +226,7 @@ const Main = () => {
       </div>
 
       {/** Screen 11 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#8FD1FF]">
+      <div className="flex flex-col w-screen h-[320px] sm:h-screen items-center bg-[#8FD1FF]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
@@ -258,7 +259,7 @@ const Main = () => {
       </div>
 
       {/** Screen 12 */}
-      <div className="relative flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
+      <div className="relative flex flex-col w-screen h-[440px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">

@@ -12,6 +12,7 @@ import infoSunlightCard from "../../assets/info_sunlight_card.svg";
 import infoSunlightExchange from "../../assets/info_sunlight_exchange.svg";
 import infoPost from "../../assets/info_post.svg";
 import infoParticipation from "../../assets/info_participation.svg";
+import infoChat from "../../assets/info_chat.svg";
 import sun3d from "../../assets/sun_3d.svg";
 
 const Main = () => {
@@ -178,6 +179,42 @@ const Main = () => {
           className="w-[210px] sm:w-[750px] absolute z-0 left-0 bottom-0"
           src={sun3d}
         />
+      </div>
+
+      {/** Screen 10 */}
+      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#3A3A3C]">
+        {/** Navigator */}
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+          <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
+            Exchange
+          </p>
+          <div className="flex sm:gap-2">
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={empty} />
+            <img className="w-5 sm:w-9" src={empty} />
+          </div>
+        </div>
+
+        {/** Row Flex Box */}
+        {/** Screen 3의 Row Flex Box와 동일한 방법으로 처리할 예정 */}
+        <div className="flex">
+          <div className="flex flex-col">
+            <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
+              채팅
+            </p>
+            <p className="text-xs sm:text-xl font-medium text-[#E5E5EA]">
+              개설된 채팅방은 채팅 탭에서 내 게시글과 이웃
+              <br />
+              게시글을 나눠서 볼 수 있어요.
+            </p>
+            <p className="text-xs sm:text-xl font-medium text-[#E5E5EA] pt-4 sm:pt-7">
+              채팅창을 통해 이웃에게 바로 햇살을 보내요.
+            </p>
+          </div>
+          <img className="w-[208px] sm:w-[740px]" src={infoChat} />
+        </div>
       </div>
     </>
   );

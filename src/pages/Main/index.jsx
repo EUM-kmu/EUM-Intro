@@ -129,7 +129,7 @@ const Main = () => {
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
-            Exchange
+            EXCHANGE
           </p>
           <div className="flex sm:gap-2">
             <img className="w-5 sm:w-9" src={filled} />
@@ -194,7 +194,7 @@ const Main = () => {
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
-            Exchange
+            CHAT
           </p>
           <div className="flex sm:gap-2">
             <img className="w-5 sm:w-9" src={filled} />
@@ -230,7 +230,7 @@ const Main = () => {
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
-            Community
+            COMMUNITY
           </p>
           <div className="flex sm:gap-2">
             <img className="w-5 sm:w-9" src={filled} />
@@ -263,7 +263,7 @@ const Main = () => {
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
-            Notification
+            NOTIFICATION
           </p>
           <div className="flex sm:gap-2">
             <img className="w-5 sm:w-9" src={filled} />

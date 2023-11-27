@@ -13,7 +13,9 @@ import infoSunlightExchange from "../../assets/info_sunlight_exchange.svg";
 import infoPost from "../../assets/info_post.svg";
 import infoParticipation from "../../assets/info_participation.svg";
 import infoChat from "../../assets/info_chat.svg";
+import infoNotification from "../../assets/info_notification.svg";
 import sun3d from "../../assets/sun_3d.svg";
+import cloud3d from "../../assets/cloud_3d.svg";
 
 const Main = () => {
   return (
@@ -39,7 +41,7 @@ const Main = () => {
       </div>
 
       {/** Screen 2 */}
-      <div className="relative flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
+      <div className="relative flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden ">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
@@ -70,7 +72,7 @@ const Main = () => {
       </div>
 
       {/** Screen 3 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#D9DEE4]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-[#D9DEE4]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">HOME</p>
@@ -104,7 +106,7 @@ const Main = () => {
       </div>
 
       {/** Screen 4 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center justify-center bg-[#E5E5EA]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center justify-center bg-[#E5E5EA]">
         <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10">
           햇살 카드
         </p>
@@ -117,7 +119,7 @@ const Main = () => {
       </div>
 
       {/** Screen 5 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
@@ -152,7 +154,7 @@ const Main = () => {
       {/** 해당 위치에 글쓰기 플로우에 대한 2개의 Screen(6, 7)이 추가 되어야합니다.  */}
 
       {/** Screen 8 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center justify-center bg-[#3A3A3C]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center justify-center bg-[#3A3A3C]">
         <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10">
           게시글 조회, 참여 신청
         </p>
@@ -165,7 +167,7 @@ const Main = () => {
       </div>
 
       {/** Screen 9 */}
-      <div className="relative flex flex-col w-screen h-[380px] sm:h-screen items-center bg-gradient-to-b from-[#3A3A3C] to-[#89643B] overflow-hidden ">
+      <div className="relative flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#89643B] overflow-hidden ">
         <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pt-5 sm:pt-12">
           참여 관리
         </p>
@@ -215,6 +217,68 @@ const Main = () => {
           </div>
           <img className="w-[208px] sm:w-[740px]" src={infoChat} />
         </div>
+      </div>
+
+      {/** Screen 11 */}
+      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#8FD1FF]">
+        {/** Navigator */}
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+          <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
+            Community
+          </p>
+          <div className="flex sm:gap-2">
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={empty} />
+          </div>
+        </div>
+
+        {/** Row Flex Box */}
+        {/** Screen 3의 Row Flex Box와 동일한 방법으로 처리할 예정 */}
+        <div className="flex">
+          <div className="flex flex-col">
+            <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
+              소통
+            </p>
+            <p className="text-xs sm:text-xl font-medium text-[#042D53]">
+              마을에 대한 의견을 자유롭게 나누고
+              <br />
+              이웃들의 의사를 물어볼 수 있어요.
+            </p>
+          </div>
+          <img className="w-[208px] sm:w-[740px]" src={infoChat} />
+        </div>
+      </div>
+
+      {/** Screen 12 */}
+      <div className="relative flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
+        {/** Navigator */}
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+          <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
+            Notification
+          </p>
+          <div className="flex sm:gap-2">
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+            <img className="w-5 sm:w-9" src={filled} />
+          </div>
+        </div>
+
+        <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pt-5 sm:pt-12">
+          알리미
+        </p>
+        <p className="z-10 text-sm sm:text-xl font-medium text-center text-[#042D53] p-3 sm:p-11 ">
+          우리 마을의 최신 소식을 모아서 편리하게 확인해요.
+        </p>
+        <img className="z-10 w-64 sm:w-[605px]" src={infoNotification} />
+        <img
+          className="w-[170px] sm:w-[700px] absolute z-0 right-0 bottom-0"
+          src={cloud3d}
+        />
       </div>
     </>
   );

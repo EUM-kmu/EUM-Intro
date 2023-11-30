@@ -195,7 +195,7 @@ const Main = () => {
       </div>
 
       {/** Screen 10 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-screen items-center bg-[#3A3A3C]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-[#3A3A3C]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">CHAT</p>
@@ -231,7 +231,7 @@ const Main = () => {
       </div>
 
       {/** Screen 11 */}
-      <div className="flex flex-col w-screen h-[320px] sm:h-screen items-center bg-[#8FD1FF]">
+      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#8FD1FF]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">

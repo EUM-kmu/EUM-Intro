@@ -97,12 +97,12 @@ const Main = () => {
               <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
                 게임형 홈 UI
               </p>
-              <p className="text-xs sm:text-xl font-medium text-[#7E93A3]">
+              <p className="text-xs sm:text-xl pr-3 sm:pr-[88px] font-medium text-[#7E93A3]">
                 홈에서 내 캐릭터를 확인하고
                 <br />
                 햇살 카드창에 진입할 수 있어요.
               </p>
-              <p className="text-xs sm:text-xl font-medium text-[#7E93A3] pt-4 sm:pt-7">
+              <p className="text-xs sm:text-xl pr-3 sm:pr-[88px] font-medium text-[#7E93A3] pt-4 sm:pt-7">
                 한 달마다 초기화되는 햇살 지수를 모아
                 <br />내 캐릭터를 성장시킬 수 있어요.
               </p>
@@ -148,7 +148,7 @@ const Main = () => {
               <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
                 햇살 교환
               </p>
-              <p className="text-xs sm:text-xl font-medium text-[#E5E5EA]">
+              <p className="text-xs sm:text-xl pr-3 sm:pr-[88px] font-medium text-[#E5E5EA]">
                 이웃 간 도움을 주고받는 공간이에요.
                 <br />
                 햇터 진입 시 도움 종류를 선택해요.
@@ -216,7 +216,7 @@ const Main = () => {
               <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
                 채팅
               </p>
-              <p className="text-xs sm:text-xl font-medium text-[#E5E5EA]">
+              <p className="text-xs sm:text-xl pr-3 sm:pr-[88px] font-medium text-[#E5E5EA]">
                 개설된 채팅방은 채팅 탭에서 내 게시글과 이웃
                 <br />
                 게시글을 나눠서 볼 수 있어요.
@@ -253,7 +253,7 @@ const Main = () => {
               <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
                 소통
               </p>
-              <p className="text-xs sm:text-xl font-medium text-[#042D53]">
+              <p className="text-xs pr-3 sm:pr-[88px] sm:text-xl font-medium text-[#042D53]">
                 마을에 대한 의견을 자유롭게 나누고
                 <br />
                 이웃들의 의사를 물어볼 수 있어요.

@@ -40,7 +40,7 @@ const Main = () => {
             햇살마을에서 지역 이웃들과의 교류를 시작해 볼까요?
           </p>
         </div>
-        <div className="flex gap-11">
+        <div className="flex gap-3 sm:gap-11">
           <img className="w-[116px] sm:w-96" src={phone1} />
           <img className="w-[116px] sm:w-96" src={phone2} />
         </div>

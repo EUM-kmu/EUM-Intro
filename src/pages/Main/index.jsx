@@ -91,7 +91,7 @@ const Main = () => {
           </div>
         </div>
         {/** Row Flex Box */}
-        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl px-5 sm:px-9 pt-3 sm:pt-10 z-10">
           <div className="flex">
             <div className="flex flex-col">
               <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
@@ -142,7 +142,7 @@ const Main = () => {
         </div>
 
         {/** Row Flex Box */}
-        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl px-5 sm:px-9 pt-3 sm:pt-10 z-10">
           <div className="flex">
             <div className="flex flex-col">
               <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
@@ -210,7 +210,7 @@ const Main = () => {
 
         {/** Row Flex Box */}
         {/** Screen 3의 Row Flex Box와 동일한 방법으로 처리할 예정 */}
-        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl px-5 sm:px-9 pt-3 sm:pt-10 z-10">
           <div className="flex">
             <div className="flex flex-col">
               <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
@@ -247,7 +247,7 @@ const Main = () => {
         </div>
 
         {/** Row Flex Box */}
-        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
+        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl px-5 sm:px-9 pt-3 sm:pt-10 z-10">
           <div className="flex">
             <div className="flex flex-col">
               <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">

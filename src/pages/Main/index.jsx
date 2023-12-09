@@ -48,18 +48,31 @@ const Main = () => {
       </div>
 
       {/** Screen 2 */}
-      <div className="relative flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden ">
+      <div
+        id="onboarding"
+        className="relative flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden "
+      >
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
             ONBOARDING
           </p>
-          <div className="flex sm:gap-2">
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
+          <div className="flex sm:gap-2 cursor-pointer">
+            <a href="#home">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#exchange">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#chat">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#community">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#notification">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
           </div>
         </div>
 
@@ -79,16 +92,29 @@ const Main = () => {
       </div>
 
       {/** Screen 3 */}
-      <div className="flex flex-col w-screen h-[280px] sm:h-[1080px] items-center bg-[#D9DEE4] overflow-hidden">
+      <div
+        id="home"
+        className="flex flex-col w-screen h-[280px] sm:h-[1080px] items-center bg-[#D9DEE4] overflow-hidden scroll-pt-5 sm:scroll-pt-16"
+      >
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">HOME</p>
-          <div className="flex sm:gap-2">
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
+          <div className="flex sm:gap-2 cursor-pointer">
+            <a href="#home">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#exchange">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#chat">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#community">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#notification">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
           </div>
         </div>
         {/** Row Flex Box */}
@@ -127,18 +153,31 @@ const Main = () => {
       </div>
 
       {/** Screen 5 */}
-      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53] overflow-hidden">
+      <div
+        id="exchange"
+        className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53] overflow-hidden scroll-pt-5 sm:scroll-pt-16"
+      >
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
             EXCHANGE
           </p>
-          <div className="flex sm:gap-2">
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
+          <div className="flex sm:gap-2 cursor-pointer">
+            <a href="#home">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#exchange">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#chat">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#community">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#notification">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
           </div>
         </div>
 
@@ -202,16 +241,29 @@ const Main = () => {
       </div>
 
       {/** Screen 10 */}
-      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#3A3A3C] overflow-hidden">
+      <div
+        id="chat"
+        className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#3A3A3C] overflow-hidden scroll-pt-5 sm:scroll-pt-16"
+      >
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">CHAT</p>
-          <div className="flex sm:gap-2">
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={empty} />
-            <img className="w-5 sm:w-9" src={empty} />
+          <div className="flex sm:gap-2 cursor-pointer">
+            <a href="#home">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#exchange">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#chat">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#community">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
+            <a href="#notification">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
           </div>
         </div>
 
@@ -238,18 +290,31 @@ const Main = () => {
       </div>
 
       {/** Screen 11 */}
-      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#8FD1FF] overflow-hidden">
+      <div
+        id="community"
+        className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#8FD1FF] overflow-hidden scroll-pt-5 sm:scroll-pt-16"
+      >
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
             COMMUNITY
           </p>
-          <div className="flex sm:gap-2">
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={empty} />
+          <div className="flex sm:gap-2 cursor-pointer">
+            <a href="#home">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#exchange">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#chat">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#community">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#notification">
+              <img className="w-5 sm:w-9 cursor-pointer" src={empty} />
+            </a>
           </div>
         </div>
 
@@ -272,18 +337,31 @@ const Main = () => {
       </div>
 
       {/** Screen 12 */}
-      <div className="relative flex flex-col w-screen h-[440px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden">
+      <div
+        id="notification"
+        className="relative flex flex-col w-screen h-[440px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden scroll-pt-5 sm:scroll-pt-16"
+      >
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
             NOTIFICATION
           </p>
-          <div className="flex sm:gap-2">
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
-            <img className="w-5 sm:w-9" src={filled} />
+          <div className="flex sm:gap-2 cursor-pointer">
+            <a href="#home">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#exchange">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#chat">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#community">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
+            <a href="#notification">
+              <img className="w-5 sm:w-9 cursor-pointer" src={filled} />
+            </a>
           </div>
         </div>
 

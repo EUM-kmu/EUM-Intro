@@ -22,6 +22,7 @@ import StoreContainer from "../../components/StoreContainer/inedx";
 import qrApple from "../../assets/qr.png";
 import qrGoogle from "../../assets/qr.png";
 import Footer from "../../components/Footer";
+import postFlow from "../../assets/post_flow.svg";
 
 const Main = () => {
   return (
@@ -78,7 +79,7 @@ const Main = () => {
       </div>
 
       {/** Screen 3 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-[#D9DEE4]">
+      <div className="flex flex-col w-screen h-[280px] sm:h-[1080px] items-center bg-[#D9DEE4]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">HOME</p>
@@ -162,7 +163,13 @@ const Main = () => {
         </div>
       </div>
 
-      {/** 해당 위치에 글쓰기 플로우에 대한 2개의 Screen(6, 7)이 추가 되어야합니다.  */}
+      {/** Screen 6, 7 */}
+      <div className="flex flex-col w-screen items-center bg-[#042D53] gap-5 sm:gap-[80px] pt-4 pb-20 sm:pt-16 sm:pb-[220px]">
+        <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold">
+          글쓰기 플로우
+        </p>
+        <img className="px-6" src={postFlow} />
+      </div>
 
       {/** Screen 8 */}
       <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center justify-center bg-[#3A3A3C]">
@@ -195,7 +202,7 @@ const Main = () => {
       </div>
 
       {/** Screen 10 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center bg-[#3A3A3C]">
+      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#3A3A3C]">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">CHAT</p>
@@ -265,7 +272,7 @@ const Main = () => {
       </div>
 
       {/** Screen 12 */}
-      <div className="relative flex flex-col w-screen h-[440px] sm:h-screen items-center bg-[#F2F2F7] overflow-hidden ">
+      <div className="relative flex flex-col w-screen h-[440px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden ">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">

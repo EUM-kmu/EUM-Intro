@@ -79,7 +79,7 @@ const Main = () => {
       </div>
 
       {/** Screen 3 */}
-      <div className="flex flex-col w-screen h-[280px] sm:h-[1080px] items-center bg-[#D9DEE4]">
+      <div className="flex flex-col w-screen h-[280px] sm:h-[1080px] items-center bg-[#D9DEE4] overflow-hidden">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">HOME</p>
@@ -114,7 +114,7 @@ const Main = () => {
       </div>
 
       {/** Screen 4 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center justify-center bg-[#E5E5EA]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center justify-center bg-[#E5E5EA] overflow-hidden">
         <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10">
           햇살 카드
         </p>
@@ -127,7 +127,7 @@ const Main = () => {
       </div>
 
       {/** Screen 5 */}
-      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53]">
+      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-gradient-to-b from-[#3A3A3C] to-[#042D53] overflow-hidden">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">
@@ -164,7 +164,7 @@ const Main = () => {
       </div>
 
       {/** Screen 6, 7 */}
-      <div className="flex flex-col w-screen items-center bg-[#042D53] gap-5 sm:gap-[80px] pt-4 pb-20 sm:pt-16 sm:pb-[220px]">
+      <div className="flex flex-col w-screen items-center bg-[#042D53] gap-5 sm:gap-[80px] pt-4 pb-20 sm:pt-16 sm:pb-[220px] overflow-hidden">
         <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold">
           글쓰기 플로우
         </p>
@@ -172,7 +172,7 @@ const Main = () => {
       </div>
 
       {/** Screen 8 */}
-      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center justify-center bg-[#3A3A3C]">
+      <div className="flex flex-col w-screen h-[380px] sm:h-[1080px] items-center justify-center bg-[#3A3A3C] overflow-hidden">
         <p className="text-xl sm:text-4xl text-[#FFF0D4] font-bold z-10">
           게시글 조회, 참여 신청
         </p>
@@ -202,7 +202,7 @@ const Main = () => {
       </div>
 
       {/** Screen 10 */}
-      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#3A3A3C]">
+      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#3A3A3C] overflow-hidden">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#FFA339]">CHAT</p>
@@ -238,7 +238,7 @@ const Main = () => {
       </div>
 
       {/** Screen 11 */}
-      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#8FD1FF]">
+      <div className="flex flex-col w-screen h-[320px] sm:h-[1080px] items-center bg-[#8FD1FF] overflow-hidden">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
@@ -272,7 +272,7 @@ const Main = () => {
       </div>
 
       {/** Screen 12 */}
-      <div className="relative flex flex-col w-screen h-[440px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden ">
+      <div className="relative flex flex-col w-screen h-[440px] sm:h-[1080px] items-center bg-[#F2F2F7] overflow-hidden">
         {/** Navigator */}
         <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl pl-5 sm:pl-9 pt-3 sm:pt-10 z-10">
           <p className="text-xs sm:text-4xl font-bold text-[#042D53]">
@@ -301,7 +301,7 @@ const Main = () => {
       </div>
 
       {/** Screen 13 */}
-      <div className="py-7 sm:py-[100px] flex w-screen h-[212px] sm:h-[750px] justify-center items-center bg-[#DDDDDD] overflow-hidden ">
+      <div className="py-7 sm:py-[100px] flex w-screen h-[212px] sm:h-[750px] justify-center items-center bg-[#DDDDDD] overflow-hidden">
         <div className="flex flex-col items-center gap-6 sm:gap-20">
           <img className="w-[65px] sm:w-[205px]" src={icon} />
           <div className="flex sm:gap-4 gap-[5.3px]">

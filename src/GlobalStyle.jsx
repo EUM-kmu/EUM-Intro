@@ -96,6 +96,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     :root {
+        color-scheme: light only;
         --primary: #FFA339;
         --primary-l: #FFF0D4;
         --secondary-d: #042D53;
@@ -105,6 +106,14 @@ const GlobalStyles = createGlobalStyle`
         --gray06: #AEAEB2;
         --gray07: #8E8E93;
         --button-default: #042D53;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        html,
+        body {
+            background: #fff !important;
+            background-color: #fff !important;
+        }
     }
 `;
 

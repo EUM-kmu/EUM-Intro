@@ -24,22 +24,56 @@ import qrGoogle from "../../assets/qr.png";
 import Footer from "../../components/Footer";
 import postFlow from "../../assets/post_flow.svg";
 import ReactPlayer from "react-player";
+import playBackground from "../../assets/movie_background.svg";
 
 const Main = () => {
   return (
     <>
       <TopBar className="z-30" />
-      {/** Screen 1 */}
-      <div className="flex flex-col pt-12 w-screen h-[380px] sm:h-screen items-center justify-between bg-[#FFA339] overflow-hidden">
+
+      <div className="z-20 relative flex flex-col w-screen h-[380px] sm:h-screen items-center  bg-gradient-to-b from-[#8FD1FF] to-white  overflow-hidden ">
+        <p className="sm:text-4xl text-[#042D53] font-bold z-30 pt-5 sm:pt-12">
+          주민들의 니즈를 반영한
+          <br />
+          우리 마을 소통 플랫폼
+        </p>
+
         <div className="flex flex-col items-center">
-          <div className="flex gap-2 sm:gap-8  items-center">
-            <img className="w-12 sm:w-32" src={icon} />
-            <img className="h-9 sm:h-24" src={title} />
+          <div className="flex gap-2 sm:gap-8  items-center py-2 sm:py-10">
+            <img className="w-7 sm:w-24 z-20" src={icon} />
+            <img className="h-5 sm:h-16 z-20" src={title} />
           </div>
-          <p className="pt-6 text-xs sm:text-xl text-white text-center font-medium">
-            우리 마을 주민들의 니즈를 반영한 동네 소통 플랫폼, 햇살마을이에요.
+          <div className="z-20 px-6 sm:w-[960px] sm:h-[540px]">
+            <ReactPlayer
+              className="react-player"
+              url={
+                "https://kr.object.ncloudstorage.com/k-eum/ppt/%EC%98%81%EC%83%81.mp4"
+              } // 플레이어 url
+              width="100%" // 플레이어 크기 (가로)
+              height="100%" // 플레이어 크기 (세로)
+              playing={true} // 자동 재생 on
+              muted={true} // 자동 재생 on
+              controls={true} // 플레이어 컨트롤 노출 여부
+              light={false} // 플레이어 모드
+              pip={true} // pip 모드 설정 여부
+              poster={
+                "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
+              } // 플레이어 초기 포스터 사진
+              onEnded={() => handleVideo()} // 플레이어 끝났을 때 이벤트
+            />
+          </div>
+        </div>
+
+        <img className="w-screen absolute z-0" src={playBackground} />
+      </div>
+
+      {/** Screen 1 */}
+      <div className="flex flex-col pt-12 w-screen h-[300px] sm:h-screen items-center justify-between bg-[#FFA339] overflow-hidden">
+        <div className="flex flex-col items-center">
+          <p className="sm:pt-14 text-base sm:text-5xl text-white text-center font-medium">
+            햇살마을에서 지역 이웃들과의
             <br />
-            햇살마을에서 지역 이웃들과의 교류를 시작해 볼까요?
+            교류를 시작해 볼까요?
           </p>
         </div>
         <div className="flex gap-3 sm:gap-11">
@@ -47,27 +81,6 @@ const Main = () => {
           <img className="w-[116px] sm:w-96" src={phone2} />
         </div>
       </div>
-
-      <div className="flex justify-center">
-        <ReactPlayer
-          className="react-player"
-          url={
-            "https://kr.object.ncloudstorage.com/k-eum/ppt/%EC%98%81%EC%83%81.mp4"
-          } // 플레이어 url
-          width="800px" // 플레이어 크기 (가로)
-          height="500px" // 플레이어 크기 (세로)
-          playing={true} // 자동 재생 on
-          muted={true} // 자동 재생 on
-          controls={true} // 플레이어 컨트롤 노출 여부
-          light={false} // 플레이어 모드
-          pip={true} // pip 모드 설정 여부
-          poster={
-            "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
-          } // 플레이어 초기 포스터 사진
-          onEnded={() => handleVideo()} // 플레이어 끝났을 때 이벤트
-        />
-      </div>
-
       {/** Screen 2 */}
       <div
         id="onboarding"

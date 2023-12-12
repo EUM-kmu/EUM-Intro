@@ -34,7 +34,7 @@ const Main = () => {
       <TopBar className="z-30" />
 
       <div className="z-20 relative flex flex-col w-screen h-[380px] sm:h-screen items-center  bg-gradient-to-b from-[#8FD1FF] to-white  overflow-hidden ">
-        <p className="sm:text-4xl text-[#042D53] font-bold z-30 pt-5 sm:pt-12">
+        <p className="sm:text-4xl text-[#042D53] text-center font-bold z-30 pt-5 sm:pt-12">
           주민들의 니즈를 반영한
           <br />
           우리 마을 소통 플랫폼

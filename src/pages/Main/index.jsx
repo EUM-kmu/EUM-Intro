@@ -25,6 +25,8 @@ import Footer from "../../components/Footer";
 import postFlow from "../../assets/post_flow.svg";
 import ReactPlayer from "react-player";
 import playBackground from "../../assets/movie_background.svg";
+import phoneCommunity from "../../assets/phone_community.svg";
+import backgroundCommunity from "../../assets/background_community.svg";
 
 const Main = () => {
   return (
@@ -353,7 +355,13 @@ const Main = () => {
         </div>
 
         {/** Row Flex Box */}
-        <div className="flex w-screen contents-start font-2xl font-bold gap-2 sm:gap-5 items-center max-w-7xl px-5 sm:px-9 pt-3 sm:pt-10 z-10">
+        <div
+          style={{
+            backgroundImage: `url(${backgroundCommunity})`,
+            backgroundRepeat: "no-repeat",
+          }}
+          className="flex w-screen contents-start font-2xl h-full font-bold gap-2 sm:gap-5 max-w-7xl px-5 sm:px-9 pt-3 sm:pt-10 z-10"
+        >
           <div className="flex">
             <div className="flex flex-col">
               <p className="text-xl sm:text-4xl text-[#042D53] font-bold z-10 pb-1 sm:pb-4 pt-5 sm:pt-12">
@@ -365,7 +373,7 @@ const Main = () => {
                 이웃들의 의사를 물어볼 수 있어요.
               </p>
             </div>
-            <img className="w-[208px] sm:w-[740px]" src={infoChat} />
+            <img className="w-[208px] sm:w-[740px]" src={phoneCommunity} />
           </div>
         </div>
       </div>

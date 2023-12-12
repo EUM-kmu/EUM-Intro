@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className=" py-4 sm:py-9 flex flex-col w-screen h-[92px] sm:h-[326px] bg-[#F2F2F7] pl-28 sm:pl-[334px] gap-2 sm:gap-8">
-      <p className="text-[6.75px] sm:text-2xl font-bold">이음</p>
+      <p className="text-[6.75px] sm:text-2xl font-bold">Team. 이음</p>
       <div className="flex gap-1 sm:gap-4">
         <a
           target="_blank"

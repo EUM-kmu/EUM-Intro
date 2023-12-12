@@ -72,12 +72,17 @@ const Main = () => {
       {/** Screen 1 */}
       <div className="flex flex-col w-screen h-[300px] sm:h-screen items-center justify-between bg-[#FFA339] overflow-hidden">
         <div className="flex flex-col items-center">
-          <p className="pt-3 sm:pt-8 sm:pb-14 text-base sm:text-5xl text-white text-center font-medium">
+          <p className="pt-3 sm:pt-8 sm:pb-14 text-base sm:text-5xl sm:leading-[140%] text-white text-center font-bold">
             햇살마을에서 지역 이웃들과의
             <br />
-            교류를 시작해 볼까요?
+            교류를 시작해봐요!
           </p>
         </div>
+        <StoreContainer
+          qrSrc={qrApple}
+          text={"웹 앱으로 사용하기"}
+          path={"https://app.haetsal.com"}
+        />
         <div className="flex gap-3 sm:gap-11">
           <img className="w-[116px] sm:w-96" src={phone1} />
           <img className="w-[116px] sm:w-96" src={phone2} />

@@ -68,9 +68,9 @@ const Main = () => {
       </div>
 
       {/** Screen 1 */}
-      <div className="flex flex-col pt-12 w-screen h-[300px] sm:h-screen items-center justify-between bg-[#FFA339] overflow-hidden">
+      <div className="flex flex-col w-screen h-[300px] sm:h-screen items-center justify-between bg-[#FFA339] overflow-hidden">
         <div className="flex flex-col items-center">
-          <p className="sm:pt-14 text-base sm:text-5xl text-white text-center font-medium">
+          <p className="pt-3 sm:pt-8 sm:pb-14 text-base sm:text-5xl text-white text-center font-medium">
             햇살마을에서 지역 이웃들과의
             <br />
             교류를 시작해 볼까요?

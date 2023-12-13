@@ -2,6 +2,7 @@ import TopBar from "../../components/TopBar";
 import icon from "../../assets/app_icon.svg";
 import iconApple from "../../assets/apple_icon.svg";
 import iconGooglePlay from "../../assets/googleplay_icon.svg";
+import iconOnestore from "../../assets/onestore_icon.svg";
 import title from "../../assets/app_title.svg";
 import phone1 from "../../assets/phone_1.svg";
 import phone2 from "../../assets/phone_2.svg";
@@ -21,6 +22,8 @@ import cloud3d from "../../assets/cloud_3d.svg";
 import StoreContainer from "../../components/StoreContainer/inedx";
 import qrApple from "../../assets/qr.png";
 import qrGoogle from "../../assets/qr.png";
+import qrOneStore from "../../assets/qr_onestore.svg";
+import qrWeb from "../../assets/qr_homepage.svg";
 import Footer from "../../components/Footer";
 import postFlow from "../../assets/post_flow.svg";
 import ReactPlayer from "react-player";
@@ -79,7 +82,7 @@ const Main = () => {
           </p>
         </div>
         <StoreContainer
-          qrSrc={qrApple}
+          qrSrc={qrWeb}
           text={"웹 앱으로 사용하기"}
           path={"https://app.haetsal.com"}
         />
@@ -430,7 +433,7 @@ const Main = () => {
         <div className="flex flex-col items-center gap-6 sm:gap-20">
           <img className="w-[65px] sm:w-[205px]" src={icon} />
           <div className="flex sm:gap-4 gap-[5.3px]">
-            <StoreContainer
+            {/* <StoreContainer
               qrSrc={qrApple}
               iconSrc={iconApple}
               text={"App Store"}
@@ -439,6 +442,14 @@ const Main = () => {
               qrSrc={qrGoogle}
               iconSrc={iconGooglePlay}
               text={"Google Play"}
+            /> */}
+            <StoreContainer
+              qrSrc={qrOneStore}
+              iconSrc={iconOnestore}
+              text={"ONE store"}
+              path={
+                "https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000773108"
+              }
             />
           </div>
         </div>

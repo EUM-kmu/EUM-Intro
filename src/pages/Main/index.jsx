@@ -81,11 +81,22 @@ const Main = () => {
             교류를 시작해봐요!
           </p>
         </div>
-        <StoreContainer
-          qrSrc={qrWeb}
-          text={"웹 앱으로 사용하기"}
-          path={"https://app.haetsal.com"}
-        />
+        <div className="flex sm:gap-4 gap-[5.3px]">
+          <StoreContainer
+            qrSrc={qrWeb}
+            text={"웹 앱으로 사용하기"}
+            path={"http://49.50.175.248/"}
+          />
+          <StoreContainer
+            qrSrc={qrOneStore}
+            iconSrc={iconOnestore}
+            text={"ONE store"}
+            path={
+              "https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000773108"
+            }
+          />
+        </div>
+
         <div className="flex gap-3 sm:gap-11">
           <img className="w-[116px] sm:w-96" src={phone1} />
           <img className="w-[116px] sm:w-96" src={phone2} />
@@ -429,11 +440,11 @@ const Main = () => {
       </div>
 
       {/** Screen 13 */}
-      <div className="py-7 sm:py-[100px] flex w-screen h-[212px] sm:h-[750px] justify-center items-center bg-[#DDDDDD] overflow-hidden">
+      {/* <div className="py-7 sm:py-[100px] flex w-screen h-[212px] sm:h-[750px] justify-center items-center bg-[#DDDDDD] overflow-hidden">
         <div className="flex flex-col items-center gap-6 sm:gap-20">
           <img className="w-[65px] sm:w-[205px]" src={icon} />
           <div className="flex sm:gap-4 gap-[5.3px]">
-            {/* <StoreContainer
+            <StoreContainer
               qrSrc={qrApple}
               iconSrc={iconApple}
               text={"App Store"}
@@ -442,7 +453,7 @@ const Main = () => {
               qrSrc={qrGoogle}
               iconSrc={iconGooglePlay}
               text={"Google Play"}
-            /> */}
+            />
             <StoreContainer
               qrSrc={qrOneStore}
               iconSrc={iconOnestore}
@@ -453,7 +464,7 @@ const Main = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </>
